@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>game</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./style/game.css">
+</head>
+<body>
+  <div class="app">
+    <header class="clearfix">
+      <h3 id="stageTitle">1. Set Up</h3>
+      <ul class="clearfix" id='information'>
+        <li id="roundNum">roundNum: <span>5</span></li>
+        <li id="inactiveMinesNum">inactiveMinesNum: <span>1</span></li>
+        <li id="roboticSpaceshipsNum">roboticSpaceshipsNum: <span>1</span></li>
+      </ul>
+      
+    </header>
+    <p>
+        <span>
+          &nbsp;&nbsp;mine:
+          <i class="iconfont mineB"></i>
+        </span>
+        <span>
+          &nbsp;&nbsp;mineActived:
+          <i class="iconfont mineActiveB" style="color:orange"></i>
+        </span>
+        <span>
+          &nbsp;&nbsp;asteroid:
+          <i class="iconfont asteroidB"></i>
+        </span>
+        <span>
+          &nbsp;&nbsp;robotic-spaceship:
+          <i class="iconfont rSpaceshipB"></i>
+        </span>
+        <span>
+          &nbsp;&nbsp;user-spaceship:
+          <i class="iconfont uSpaceshipB"></i>
+        </span>
+      </p>
+    <main>
+      <ul class="cleafix" id='content'></ul>
+    </main>
+
+    
+    <footer>
+      <button id="nextStage">Next</button>
+      <button id='overGame'>Over</button>
+      <button id='againGame'>Again</button>
+      
+    </footer>
+    
+    <!-- <aside>
+      <section>
+        <h3>Please enter the actor</h3>
+        <p>
+          <span>a:asteroid&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>m:mine&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>r:robotic-spaceship&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>u:user-spaceship&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </p>
+        <input type="text" maxLength="1" placeholder="please input prescriptive letter!">
+        <button>SURE</button>
+        <button>CANCEL</button>
+      </section>
+    </aside> -->
+  </div>
+  <!-- <canvas id='canvas' width="400" height="400"></canvas> -->
+  <script src="./script/game.js"></script>
+</body>
+</html>
